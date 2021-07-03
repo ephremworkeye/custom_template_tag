@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple tag</title>
+</head>
+<body>
+    {% load simple_tag inclusion_tag %}
+    {% greet_user message  username %}
+    <p>{% contextual_greet_user "hey there" %}</p>
+    <br>
+    <span class="message">You have read the following books till date</span>
+    {% book_list books%}
+</body>
+</html>
